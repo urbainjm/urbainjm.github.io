@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEC MENTAL - Bibliothèque d'eBooks</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #007BFF 0%, #0056b3 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,123,255,0.3);
+        }
+        
+        .star-rating {
+            color: #fbbf24;
+        }
+        
+        .stats-counter {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+        
+        .ebook-cover {
+            aspect-ratio: 3/4;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .review-card {
+            background: #f8fafc;
+            border-left: 4px solid #007BFF;
+            transition: all 0.3s ease;
+        }
+        
+        .review-card:hover {
+            background: #f1f5f9;
+            transform: translateX(5px);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-4 hero-title">MEC MENTAL</h1>
+            <p class="text-xl mb-6 opacity-90">Découvre mes eBooks exclusifs pour développer ton potentiel</p>
+            <div class="stats-counter inline-flex items-center px-6 py-3 rounded-full text-white font-semibold">
+                <i class="fas fa-download mr-2"></i>
+                <span class="text-lg">+2,500 téléchargements</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- eBooks Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            
+            <!-- eBook 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                <div class="p-6">
+                    <div class="flex flex-col lg:flex-row gap-6">
+                        <div class="lg:w-1/3">
+                            <img src="images/4.png" 
+                                 alt="Comment récupérer son ex" 
+                                 class="w-full ebook-cover">
+                        </div>
+                        <div class="lg:w-2/3">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-3">Comment récupérer son ex</h3>
+                            <p class="text-gray-600 mb-4">Découvrez les stratégies psychologiques éprouvées pour reconquérir votre ex-partenaire. Une approche mature et respectueuse pour reconstruire une relation solide basée sur la compréhension mutuelle.</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-3xl font-bold text-blue-600">2.99€</span>
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="text-gray-600 ml-2">(4.9/5)</span>
+                                </div>
+                            </div>
+                            <button onclick="window.open('https://mec-mental.mychariow.com', '_blank')" 
+                                    class="btn-primary text-white px-6 py-3 rounded-lg font-semibold w-full mb-4">
+                                <i class="fas fa-shopping-cart mr-2"></i>Acheter maintenant
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Reviews -->
+                    <div class="mt-6 space-y-3">
+                        <h4 class="font-semibold text-gray-800 mb-3">Avis clients :</h4>
+                        <div class="review-card p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <div class="star-rating mr-2">★★★★★</div>
+                                <span class="font-medium">Marc D.</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Excellent guide ! J'ai pu renouer le dialogue avec mon ex grâce aux conseils pratiques.</p>
+                        </div>
+                        <div class="review-card p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <div class="star-rating mr-2">★★★★★</div>
+                                <span class="font-medium">Sarah L.</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Approche très mature et respectueuse. Ça m'a aidé à comprendre mes erreurs.</p>
+                        </div>
+                        <div class="review-card p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <div class="star-rating mr-2">★★★★★</div>
+                                <span class="font-medium">Thomas K.</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Stratégies efficaces et psychologie bien expliquée. Je recommande vivement !</p>
+                        </div>
+                        <div class="review-card p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <div class="star-rating mr-2">★★★★★</div>
+                                <span class="font-medium">Julie M.</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Un vrai changement dans ma façon d'appréhender les relations. Merci !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- eBook 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                <div class="p-6">
+                    <div class="flex flex-col lg:flex-row gap-6">
+                        <div class="lg:w-1/3">
+                            <img src="images/2.png" 
+                                 alt="Les vrais secrets et techniques de la séduction moderne" 
+                                 class="w-full ebook-cover">
+                        </div>
+                        <div class="lg:w-2/3">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-3">Les vrais secrets et techniques de la séduction moderne</h3>
+                            <p class="text-gray-600 mb-4">Maîtrisez l'art de la séduction authentique avec des techniques modernes basées sur la confiance en soi et la communication naturelle. Apprenez à créer une connexion véritable et durable.</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-3xl font-bold text-blue-600">1.99€</span>
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="text-gray-600 ml-2">(4.8/5)</span>
+                                </div>
+                            </div>
+                            <button onclick="window.open('https://mec-mental.mychariow.com', '_blank')" 
+                                    class="btn-primary text-white px-6 py-3 rounded-lg font-semibold w-full mb-4">
+                                <i class="fas fa-shopping-cart mr-2"></i>Acheter maintenant
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Reviews -->
+                    <div class="mt-6 space-y-3">
+                        <h4 class="font-semibold text-gray-800 mb-3">Avis clients :</h4>
+                        <div class="review-card p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <div class="star-rating mr-2">★★★★★</div>
+                                <span class="font-medium">Antoine R.</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Techniques authentiques qui fonctionnent vraiment. Plus de manipulation, juste de la vraie connexion.</p>
+                        </div>
+                        <div class="review-card p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <div class="star-rating mr-2">★★★★★</div>
+                                <span class="font-medium">Lucas B.</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Parfait pour comprendre la séduction moderne. Approche respectueuse et efficace.</p>
+                        </div>
+                        <div class="review-card p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <div class="star-rating mr-2">★★★★★</div>
+                                <span class="font-medium">Kevin P.</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Ma confiance en moi a explosé depuis que j'applique ces conseils. Incroyable !</p>
+                        </div>
+                        <div class="review-card p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <div class="star-rating mr-2">★★★★★</div>
+                                <span class="font-medium">Maxime C.</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Enfin des techniques qui respectent l'autre personne. Bravo pour cette approche !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- eBook 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                <div class="p-6">
+                    <div class="flex flex-col lg:flex-row gap-6">
+                        <div class="lg:w-1/3">
+                            <img src="images/7.png" 
+                                 alt="7 techniques pour draguer sans paniquer" 
+                                 class="w-full ebook-cover">
+                        </div>
+                        <div class="lg:w-2/3">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-3">7 techniques pour draguer sans paniquer</h3>
+                            <p class="text-gray-600 mb-4">Surmontez votre anxiété sociale avec 7 méthodes pratiques pour aborder quelqu'un avec assurance et naturel. Transformez votre stress en confiance grâce à des techniques éprouvées.</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-3xl font-bold text-blue-600">1.99€</span>
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="text-gray-600 ml-2">(4.9/5)</span>
+                                </div>
+                            </div>
+                            <button onclick="window.open('https://mec-mental.mychariow.com', '_blank')" 
+                                    class="btn-primary text-white px-6 py-3 rounded-lg font-semibold w-full mb-4">
+                                <i class="fas fa-shopping-cart mr-2"></i>Acheter maintenant
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Reviews -->
+                    <div class="mt-6 space-y-3">
+                        <h4 class="font-semibold text-gray-800 mb-3">Avis clients :</h4>
+                        <div class="review-card p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <div class="star-rating mr-2">★★★★★</div>
+                                <span class="font-medium">Julien F.</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Fini le stress ! Ces 7 techniques m'ont complètement transformé. Je recommande à 100%.</p>
+                        </div>
+                        <div class="review-card p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <div class="star-rating mr-2">★★★★★</div>
+                                <span class="font-medium">Nicolas H.</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Très pratique ! J'ai enfin osé parler à cette fille qui me plaisait. Ça a marché !</p>
+                        </div>
+                        <div class="review-card p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <div class="star-rating mr-2">★★★★★</div>
+                                <span class="font-medium">Romain T.</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Adieu la panique ! Techniques simples mais redoutablement efficaces. Merci !</p>
+                        </div>
+                        <div class="review-card p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <div class="star-rating mr-2">★★★★★</div>
+                                <span class="font-medium">Paul V.</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Ma timidité a fondu comme neige au soleil. Ces méthodes changent vraiment la donne !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- eBook 4 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                <div class="p-6">
+                    <div class="flex flex-col lg:flex-row gap-6">
+                        <div class="lg:w-1/3">
+                            <img src="images/1.png" 
+                                 alt="Comment parler à une fille sans trembler" 
+                                 class="w-full ebook-cover">
+                        </div>
+                        <div class="lg:w-2/3">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-3">Comment parler à une fille sans trembler</h3>
+                            <p class="text-gray-600 mb-4">Développez votre aisance relationnelle et votre charisme naturel pour des conversations fluides et authentiques. Maîtrisez l'art de la communication avec confiance et sérénité.</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-3xl font-bold text-blue-600">3.99€</span>
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="text-gray-600 ml-2">(4.8/5)</span>
+                                </div>
+                            </div>
+                            <button onclick="window.open('https://mec-mental.mychariow.com', '_blank')" 
+                                    class="btn-primary text-white px-6 py-3 rounded-lg font-semibold w-full mb-4">
+                                <i class="fas fa-shopping-cart mr-2"></i>Acheter maintenant
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Reviews -->
+                    <div class="mt-6 space-y-3">
+                        <h4 class="font-semibold text-gray-800 mb-3">Avis clients :</h4>
+                        <div class="review-card p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <div class="star-rating mr-2">★★★★★</div>
+                                <span class="font-medium">David L.</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Plus de tremblements ! Je peux enfin avoir des conversations naturelles. Génial !</p>
+                        </div>
+                        <div class="review-card p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <div class="star-rating mr-2">★★★★★</div>
+                                <span class="font-medium">Alexandre S.</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Mon charisme naturel s'est révélé grâce à ces techniques. Résultats impressionnants !</p>
+                        </div>
+                        <div class="review-card p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <div class="star-rating mr-2">★★★★★</div>
+                                <span class="font-medium">Fabien G.</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Aisance relationnelle au top ! Je me sens enfin à l'aise dans toutes les situations.</p>
+                        </div>
+                        <div class="review-card p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <div class="star-rating mr-2">★★★★★</div>
+                                <span class="font-medium">Christophe M.</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Conversations fluides garanties ! Ce guide m'a donné une confiance inébranlable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-16">
+            <div class="bg-white rounded-lg shadow-lg p-8 max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Transformez votre vie sociale dès aujourd'hui</h2>
+                <p class="text-gray-600 mb-6">Rejoignez les +2,500 personnes qui ont déjà transformé leur vie grâce à nos guides pratiques et éprouvés.</p>
+                <button onclick="window.open('https://mec-mental.mychariow.com', '_blank')" 
+                        class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg">
+                    <i class="fas fa-rocket mr-2"></i>Découvrir tous nos eBooks
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold mb-6">MEC MENTAL</h3>
+            <p class="text-gray-400 mb-6">Développe ton potentiel avec nos guides pratiques</p>
+            
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-facebook-f text-2xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-twitter text-2xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-youtube text-2xl"></i>
+                </a>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6">
+                <p class="text-gray-400">&copy; 2025 MEC MENTAL. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add loading animation
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+
+        // Counter animation for stats
+        function animateCounter() {
+            const counter = document.querySelector('.stats-counter span');
+            if (counter) {
+                const target = 2500;
+                let current = 0;
+                const increment = target / 50;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    counter.textContent = `+${Math.floor(current)} téléchargements`;
+                }, 20);
+            }
+        }
+
+        // Trigger counter animation when in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        document.querySelector('.stats-counter') && observer.observe(document.querySelector('.stats-counter'));
+    </script>
+</body>
+</html>
