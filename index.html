@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEC MENTAL - Développement Personnel Masculin | eBooks & Coaching</title>
+    <meta name="description" content="Plateforme de coaching masculin digital spécialisée dans les eBooks de développement personnel pour hommes. Confiance, charisme, leadership.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-gradient-dark { background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%); }
+        .bg-gradient-gold { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); }
+        .text-gradient { background: linear-gradient(135deg, #f59e0b, #d97706); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-shadow { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
+        .hover-lift { transition: all 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-5px); }
+        .badge { font-size: 0.75rem; font-weight: 600; padding: 0.25rem 0.5rem; border-radius: 0.25rem; }
+        .reviews-container { max-height: 0; overflow: hidden; transition: max-height 0.5s ease-in-out; }
+        .reviews-container.expanded { max-height: 500px; }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Header -->
+    <header class="bg-gradient-dark py-8 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                    <img src="https://i.postimg.cc/YCWQwZS3/a4ac4bbd65156d2eba7d3f29ec16e422-2.jpg" alt="MEC MENTAL Logo" class="w-16 h-16 rounded-full">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-bold text-gradient">MEC MENTAL</h1>
+                        <p class="text-gray-300 text-sm">Coaching Masculin Digital</p>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-lg md:text-xl font-semibold text-white mb-2">
+                        Développe ton mental,deviens le mec que t'as toujours rêvé d'être.
+                    </p>
+                    <div class="bg-gradient-gold text-black px-4 py-2 rounded-lg inline-block">
+                        <i class="fas fa-crown mr-2"></i>Transformation Garantie
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Intro -->
+    <section class="py-16 px-4">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8">
+                <span class="text-gradient">Découvre ta puissance intérieure</span>
+            </h2>
+            <p class="text-xl text-gray-300 mb-12 leading-relaxed">
+                MEC MENTAL est la plateforme de référence pour les hommes qui veulent développer leur potentiel masculin. 
+                Nos eBooks et ressources t'accompagnent dans ta transformation personnelle.
+            </p>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-gradient-gold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-fist-raised text-2xl text-black"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Confiance en soi</h3>
+                    <p class="text-gray-400 text-sm">Développe une confiance inébranlable</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gradient-gold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-fire text-2xl text-black"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Charisme & Séduction</h3>
+                    <p class="text-gray-400 text-sm">Maîtrise l'art de l'attraction</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gradient-gold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chess-king text-2xl text-black"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Leadership naturel</h3>
+                    <p class="text-gray-400 text-sm">Deviens un leader respecté</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gradient-gold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-brain text-2xl text-black"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Psychologie masculine</h3>
+                    <p class="text-gray-400 text-sm">Comprends ton fonctionnement mental</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grille de produits eBooks -->
+    <section class="py-16 px-4 bg-gray-800">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-4">
+                <span class="text-gradient">Notre Collection d'eBooks</span>
+            </h2>
+            <p class="text-center text-gray-300 mb-12">Des ressources premium pour ta transformation personnelle</p>
+            
+            <div class="grid md:grid-cols-2 gap-8" id="ebooks-grid">
+                
+                <!-- eBook 1 -->
+                <div class="bg-gray-900 rounded-lg p-6 card-shadow hover-lift">
+                    <div class="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6">
+                        <img src="https://i.postimg.cc/mr1kpngM/LES-TECHNIQUES-SECRETS-DE-LA-S-DUCTION-20250626-125150-0000.png" alt="Alpha Male Bible" class="w-32 h-40 object-cover rounded-lg mx-auto md:mx-0">
+                        <div class="flex-1 text-center md:text-left">
+                            <div class="mb-3">
+                                <span class="badge bg-blue-600 text-white mr-2">PROMO</span>
+                                <span class="badge bg-green-600 text-white">NOUVEAU</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Les vrais secrets et techniques de la séduction</h3>
+                            <p class="text-gray-400 text-sm mb-4">Maîtrise la psychologie de la Séduction et développe ton charisme naturel</p>
+                            <div class="text-3xl font-bold text-gradient mb-4">1.99€</div>
+                            <button class="bg-gradient-gold text-black px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition w-full mb-3" onclick="window.open('https://smpszxdj.mychariow.com/prd_vutuvh', '_blank')">
+                                <i class="fas fa-shopping-cart mr-2"></i>Acheter maintenant
+                            </button>
+                            <button class="text-yellow-400 hover:text-yellow-300 text-sm flex items-center justify-center md:justify-start transition" onclick="toggleReviews('reviews1')">
+                                <i class="fas fa-chevron-down mr-2"></i>Voir les avis
+                            </button>
+                        </div>
+                    </div>
+                    <div id="reviews1" class="reviews-container mt-6">
+                        <div class="grid gap-3">
+                            <div class="bg-gray-800 p-3 rounded">
+                                <div class="flex items-center mb-2">
+                                    <div class="text-yellow-400">★★★★★</div>
+                                    <span class="ml-2 font-semibold">Marc, 28 ans</span>
+                                </div>
+                                <p class="text-sm text-gray-300">Ce livre a changé ma vie. J'ai enfin compris comment développer mon charisme naturel.</p>
+                            </div>
+                            <div class="bg-gray-800 p-3 rounded">
+                                <div class="flex items-center mb-2">
+                                    <div class="text-yellow-400">★★★★★</div>
+                                    <span class="ml-2 font-semibold">Thomas, 32 ans</span>
+                                </div>
+                                <p class="text-sm text-gray-300">Techniques concrètes et efficaces. Je recommande à 100%.</p>
+                            </div>
+                            <div class="bg-gray-800 p-3 rounded">
+                                <div class="flex items-center mb-2">
+                                    <div class="text-yellow-400">★★★★★</div>
+                                    <span class="ml-2 font-semibold">Kevin, 25 ans</span>
+                                </div>
+                                <p class="text-sm text-gray-300">Ma confiance en moi a explosé après avoir appliqué ces conseils.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- eBook 2 -->
+                <div class="bg-gray-900 rounded-lg p-6 card-shadow hover-lift">
+                    <div class="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6">
+                        <img src="https://i.postimg.cc/GtzNj9DX/LES-TECHNIQUES-SECRETS-DE-LA-S-DUCTION-20250626-114337-0000.png" alt="Modern Alpha Male" class="w-32 h-40 object-cover rounded-lg mx-auto md:mx-0">
+                        <div class="flex-1 text-center md:text-left">
+                            <div class="mb-3">
+                                <span class="badge bg-blue-600 text-white mr-2">PROMO</span>
+                                <span class="badge bg-purple-600 text-white">LIMITÉ</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">20 techniques secrètes pour draguer par SMS</h3>
+                            <p class="text-gray-400 text-sm mb-4">Stratégies modernes pour draguer par SMS sa forcer</p>
+                            <div class="flex items-center justify-center md:justify-start mb-4">
+                                <span class="text-3xl font-bold text-gradient">2.99€</span>
+                                <span class="text-lg text-gray-500 line-through ml-2">10€</span>
+                            </div>
+                            <button class="bg-gradient-gold text-black px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition w-full mb-3" onclick="window.open('https://smpszxdj.mychariow.com/prd_vutuvh', '_blank')">
+                                <i class="fas fa-shopping-cart mr-2"></i>Acheter maintenant
+                            </button>
+                            <button class="text-yellow-400 hover:text-yellow-300 text-sm flex items-center justify-center md:justify-start transition" onclick="toggleReviews('reviews2')">
+                                <i class="fas fa-chevron-down mr-2"></i>Voir les avis
+                            </button>
+                        </div>
+                    </div>
+                    <div id="reviews2" class="reviews-container mt-6">
+                        <div class="grid gap-3">
+                            <div class="bg-gray-800 p-3 rounded">
+                                <div class="flex items-center mb-2">
+                                    <div class="text-yellow-400">★★★★★</div>
+                                    <span class="ml-2 font-semibold">Lucas, 30 ans</span>
+                                </div>
+                                <p class="text-sm text-gray-300">Approche moderne et réaliste. Parfait pour notre génération.</p>
+                            </div>
+                            <div class="bg-gray-800 p-3 rounded">
+                                <div class="flex items-center mb-2">
+                                    <div class="text-yellow-400">★★★★☆</div>
+                                    <span class="ml-2 font-semibold">Antoine, 27 ans</span>
+                                </div>
+                                <p class="text-sm text-gray-300">Très bon contenu, j'ai pu arrêter de me remettre en question constamment.</p>
+                            </div>
+                            <div class="bg-gray-800 p-3 rounded">
+                                <div class="flex items-center mb-2">
+                                    <div class="text-yellow-400">★★★★★</div>
+                                    <span class="ml-2 font-semibold">Julien, 33 ans</span>
+                                </div>
+                                <p class="text-sm text-gray-300">Les stratégies fonctionnent vraiment. Je le recommande vivement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- eBook 3 -->
+                <div class="bg-gray-900 rounded-lg p-6 card-shadow hover-lift">
+                    <div class="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6">
+                        <img src="https://i.postimg.cc/SRg8q5Kr/LES-TECHNIQUES-SECRETS-DE-LA-S-DUCTION-20250626-115930-0000.png" alt="Alpha Mindset Guide" class="w-32 h-40 object-cover rounded-lg mx-auto md:mx-0">
+                        <div class="flex-1 text-center md:text-left">
+                            <div class="mb-3">
+                                <span class="badge bg-green-600 text-white">GRATUIT</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">7 techniques pour draguer sans avoir peur</h3>
+                            <p class="text-gray-400 text-sm mb-4">Séduire facilement sans avoir peur et développe ta masculinité</p>
+                            <div class="text-3xl font-bold text-green-400 mb-4">GRATUIT</div>
+                            <button class="bg-gradient-gold text-black px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition w-full mb-3" onclick="window.open('https://smpszxdj.mychariow.com/prd_vutuvh', '_blank')">
+                                <i class="fas fa-download mr-2"></i>Télécharger maintenant
+                            </button>
+                            <button class="text-yellow-400 hover:text-yellow-300 text-sm flex items-center justify-center md:justify-start transition" onclick="toggleReviews('reviews3')">
+                                <i class="fas fa-chevron-down mr-2"></i>Voir les avis
+                            </button>
+                        </div>
+                    </div>
+                    <div id="reviews3" class="reviews-container mt-6">
+                        <div class="grid gap-3">
+                            <div class="bg-gray-800 p-3 rounded">
+                                <div class="flex items-center mb-2">
+                                    <div class="text-yellow-400">★★★★★</div>
+                                    <span class="ml-2 font-semibold">Pierre, 24 ans</span>
+                                </div>
+                                <p class="text-sm text-gray-300">Excellent point d'entrée. Gratuit mais de qualité premium.</p>
+                            </div>
+                            <div class="bg-gray-800 p-3 rounded">
+                                <div class="flex items-center mb-2">
+                                    <div class="text-yellow-400">★★★★☆</div>
+                                    <span class="ml-2 font-semibold">Maxime, 29 ans</span>
+                                </div>
+                                <p class="text-sm text-gray-300">Très bon pour commencer sa transformation. Je vais acheter les autres.</p>
+                            </div>
+                            <div class="bg-gray-800 p-3 rounded">
+                                <div class="flex items-center mb-2">
+                                    <div class="text-yellow-400">★★★★★</div>
+                                    <span class="ml-2 font-semibold">Dylan, 26 ans</span>
+                                </div>
+                                <p class="text-sm text-gray-300">Parfait pour débuter. Contenu de qualité et conseils pratiques.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- eBook 4 -->
+                <div class="bg-gray-900 rounded-lg p-6 card-shadow hover-lift">
+                    <div class="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6">
+                        <img src="https://i.postimg.cc/0jqw0nkx/LES-TECHNIQUES-SECRETS-DE-LA-S-DUCTION-20250626-124641-0000.png" alt="Leadership Masculinité" class="w-32 h-40 object-cover rounded-lg mx-auto md:mx-0">
+                        <div class="flex-1 text-center md:text-left">
+                            <div class="mb-3">
+                                <span class="badge bg-blue-600 text-white">RECOMMANDÉ</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">100 phrases interdites à ne jamais dire a une fille</h3>
+                            <p class="text-gray-400 text-sm mb-4">Embrasse ta nouvelle force et développe ton leadership naturel</p>
+                            <div class="text-3xl font-bold text-gradient mb-4">2.99€</div>
+                            <button class="bg-gradient-gold text-black px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition w-full mb-3" onclick="window.open('https://smpszxdj.mychariow.com/prd_vutuvh', '_blank')">
+                                <i class="fas fa-shopping-cart mr-2"></i>Acheter maintenant
+                            </button>
+                            <button class="text-yellow-400 hover:text-yellow-300 text-sm flex items-center justify-center md:justify-start transition" onclick="toggleReviews('reviews4')">
+                                <i class="fas fa-chevron-down mr-2"></i>⬆ Voir les avis
+                            </button>
+                        </div>
+                    </div>
+                    <div id="reviews4" class="reviews-container mt-6">
+                        <div class="grid gap-3">
+                            <div class="bg-gray-800 p-3 rounded">
+                                <div class="flex items-center mb-2">
+                                    <div class="text-yellow-400">★★★★★</div>
+                                    <span class="ml-2 font-semibold">Nicolas, 31 ans</span>
+                                </div>
+                                <p class="text-sm text-gray-300">Approche révolutionnaire du leadership masculin. Très inspirant.</p>
+                            </div>
+                            <div class="bg-gray-800 p-3 rounded">
+                                <div class="flex items-center mb-2">
+                                    <div class="text-yellow-400">★★★★★</div>
+                                    <span class="ml-2 font-semibold">Romain, 35 ans</span>
+                                </div>
+                                <p class="text-sm text-gray-300">M'a aidé à devenir un meilleur leader au travail et dans ma vie privée.</p>
+                            </div>
+                            <div class="bg-gray-800 p-3 rounded">
+                                <div class="flex items-center mb-2">
+                                    <div class="text-yellow-400">★★★★☆</div>
+                                    <span class="ml-2 font-semibold">Alex, 28 ans</span>
+                                </div>
+                                <p class="text-sm text-gray-300">Contenu dense et de qualité. Demande de la pratique mais ça vaut le coup.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- eBook 5 -->
+                <div class="bg-gray-900 rounded-lg p-6 card-shadow hover-lift opacity-75">
+                    <div class="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6">
+                        <img src="https://i.postimg.cc/1RT20YNw/LES-TECHNIQUES-SECRETS-DE-LA-S-DUCTION-20250626-134609-0000.png" alt="Alpha Male Bible Bundle" class="w-32 h-40 object-cover rounded-lg mx-auto md:mx-0">
+                        <div class="flex-1 text-center md:text-left">
+                            <div class="mb-3">
+                                <span class="badge bg-gray-600 text-white">PAS DISPONIBLE</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 text-gray-400">Pack Alpha ultime complet (3)</h3>
+                            <p class="text-gray-500 text-sm mb-4">Collection complète pour devenir un vrai alpha avec autodiscipline</p>
+                            <div class="text-3xl font-bold text-gray-500 mb-4">5.99€</div>
+                            <button class="bg-gray-600 text-gray-400 px-6 py-3 rounded-lg font-semibold cursor-not-allowed w-full mb-3" disabled>
+                                <i class="fas fa-lock mr-2"></i>Bientôt disponible
+                            </button>
+                            <p class="text-gray-500 text-sm">Sortie prévue : Juillet 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- eBook 6 -->
+                <div class="bg-gray-900 rounded-lg p-6 card-shadow hover-lift">
+                    <div class="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6">
+                        <img src="https://i.postimg.cc/yd7jy07M/LES-TECHNIQUES-SECRETS-DE-LA-S-DUCTION-20250626-135746-0000.png" alt="Ultimate Alpha Bible" class="w-32 h-40 object-cover rounded-lg mx-auto md:mx-0">
+                        <div class="flex-1 text-center md:text-left">
+                            <div class="mb-3">
+                                <span class="badge bg-purple-600 text-white mr-2">PREMIUM</span>
+                                <span class="badge bg-red-600 text-white">HOT</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Bible Alpha Ultime</h3>
+                            <p class="text-gray-400 text-sm mb-4">Psychologie masculine avancée et transformation complète</p>
+                            <div class="text-3xl font-bold text-gradient mb-4">10.99€</div>
+                            <button class="bg-gradient-gold text-black px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition w-full mb-3" onclick="window.open('https://smpszxdj.mychariow.com/prd_vutuvh', '_blank')">
+                                <i class="fas fa-shopping-cart mr-2"></i>Acheter maintenant
+                            </button>
+                            <button class="text-yellow-400 hover:text-yellow-300 text-sm flex items-center justify-center md:justify-start transition" onclick="toggleReviews('reviews6')">
+                                <i class="fas fa-chevron-down mr-2"></i>Voir les avis
+                            </button>
+                        </div>
+                    </div>
+                    <div id="reviews6" class="reviews-container mt-6">
+                        <div class="grid gap-3">
+                            <div class="bg-gray-800 p-3 rounded">
+                                <div class="flex items-center mb-2">
+                                    <div class="text-yellow-400">★★★★★</div>
+                                    <span class="ml-2 font-semibold">Stéphane, 34 ans</span>
+                                </div>
+                                <p class="text-sm text-gray-300">"Le niveau au-dessus. Contenu exceptionnel pour une transformation profonde."</p>
+                            </div>
+                            <div class="bg-gray-800 p-3 rounded">
+                                <div class="flex items-center mb-2">
+                                    <div class="text-yellow-400">★★★★★</div>
+                                    <span class="ml-2 font-semibold">Mathieu, 29 ans</span>
+                                </div>
+                                <p class="text-sm text-gray-300">"Investment qui vaut chaque euro. Ma vie a complètement changé."</p>
+                            </div>
+                            <div class="bg-gray-800 p-3 rounded">
+                                <div class="flex items-center mb-2">
+                                    <div class="text-yellow-400">★★★★★</div>
+                                    <span class="ml-2 font-semibold">Fabien, 32 ans</span>
+                                </div>
+                                <p class="text-sm text-gray-300">"Le must-have pour tout homme qui veut réussir. Incontournable."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Pourquoi MEC MENTAL -->
+    <section class="py-16 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-12">
+                <span class="text-gradient">Pourquoi MEC MENTAL ?</span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://i.postimg.cc/Jn1XZh56/20250608-1707-Homme-Mystique-simple-compose-01jx818agcfqj8r23hsycf0ztt.png" alt="Homme confiant" class="rounded-lg card-shadow">
+                </div>
+                <div>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-gradient-gold w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center">
+                                <i class="fas fa-target text-black text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2">Spécialement conçu pour les hommes de 18-35 ans</h3>
+                                <p class="text-gray-400">Notre approche est adaptée aux défis spécifiques de ta génération.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-gradient-gold w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center">
+                                <i class="fas fa-brain text-black text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2">Approche psychologique directe</h3>
+                                <p class="text-gray-400">Pas de blabla, que des techniques concrètes et scientifiquement prouvées.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-gradient-gold w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center">
+                                <i class="fas fa-rocket text-black text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2">Style motivant et transformateur</h3>
+                                <p class="text-gray-400">Chaque page te pousse vers l'action et la transformation personnelle.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-gradient-gold w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center">
+                                <i class="fas fa-shield-alt text-black text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2">Résultats garantis</h3>
+                                <p class="text-gray-400">Plus de 10 000 hommes ont déjà transformé leur vie grâce à nos méthodes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ & Politique -->
+    <section class="py-16 px-4 bg-gray-800">
+        <div class="container mx-auto max-w-4xl">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- FAQ -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 text-gradient">Questions fréquentes</h2>
+                    <div class="space-y-6">
+                        <div class="bg-gray-900 p-6 rounded-lg">
+                            <h3 class="font-semibold text-lg mb-3">Vos méthodes fonctionnent-elles vraiment ?</h3>
+                            <p class="text-gray-400">Absolument. Nos techniques sont basées sur la psychologie masculine et testées par des milliers d'hommes. Les résultats parlent d'eux-mêmes.</p>
+                        </div>
+                        <div class="bg-gray-900 p-6 rounded-lg">
+                            <h3 class="font-semibold text-lg mb-3">Combien de temps pour voir des résultats ?</h3>
+                            <p class="text-gray-400">La plupart de nos clients voient des changements significatifs dès les 2-4 premières semaines d'application des techniques.</p>
+                        </div>
+                        <div class="bg-gray-900 p-6 rounded-lg">
+                            <h3 class="font-semibold text-lg mb-3">Est-ce adapté à mon âge ?</h3>
+                            <p class="text-gray-400">Nos eBooks sont optimisés pour les hommes de 18 à 35 ans, mais les principes fonctionnent à tout âge.</p>
+                        </div>
+                        <div class="bg-gray-900 p-6 rounded-lg">
+                            <h3 class="font-semibold text-lg mb-3">Format des eBooks ?</h3>
+                            <p class="text-gray-400">Tous nos eBooks sont disponibles en PDF haute qualité, lisibles sur tous les appareils.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Politique -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 text-gradient">Politique de remboursement</h2>
+                    <div class="bg-gray-900 p-6 rounded-lg">
+                        <div class="text-center mb-6">
+                            <div class="bg-gradient-gold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-shield-alt text-2xl text-black"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gradient">Garantie 30 jours</h3>
+                        </div>
+                        <div class="space-y-4 text-gray-300">
+                            <p><i class="fas fa-check text-green-400 mr-2"></i> Remboursement intégral sous 30 jours</p>
+                            <p><i class="fas fa-check text-green-400 mr-2"></i> Aucune question posée</p>
+                            <p><i class="fas fa-check text-green-400 mr-2"></i> Traitement rapide (24-48h)</p>
+                            <p><i class="fas fa-check text-green-400 mr-2"></i> Support client réactif</p>
+                        </div>
+                        <div class="mt-6 p-4 bg-blue-900 rounded-lg">
+                            <p class="text-sm"><i class="fas fa-info-circle text-blue-400 mr-2"></i>
+                            <strong>Procédure simple :</strong> Envoyez un email à support@mecmental.com avec votre numéro de commande. Remboursement traité sous 48h.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-dark py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="https://i.postimg.cc/YCWQwZS3/a4ac4bbd65156d2eba7d3f29ec16e422-2.jpg" alt="MEC MENTAL" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gradient">MEC MENTAL</h3>
+                            <p class="text-gray-400 text-sm">Coaching Masculin Digital</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Transforme ta vie avec nos eBooks de développement personnel masculin. 
+                        Rejoins des milliers d'hommes qui ont déjà pris leur destin en main.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition">
+                            <i class="fab fa-telegram text-xl"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition">
+                            <i class="fab fa-tiktok text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Liens rapides</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Nos eBooks</a></li>
+                        <li><a href="#" class="hover:text-white transition">À propos</a></li>
+                        <li><a href="#" class="hover:text-white transition">Témoignages</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+                        <li><a href="#" class="hover:text-white transition">Remboursement</a></li>
+                        <li><a href="#" class="hover:text-white transition">Livraison</a></li>
+                        <li><a href="#" class="hover:text-white transition">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-8 border-gray-700">
+            <div class="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2024 MEC MENTAL - Tous droits réservés</p>
+                    <p>SIRET: 123 456 789 00012 | Mentions légales | CGV</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-white transition">Politique de confidentialité</a>
+                    <a href="#" class="hover:text-white transition">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleReviews(reviewsId) {
+            const reviewsContainer = document.getElementById(reviewsId);
+            const button = reviewsContainer.previousElementSibling.querySelector('button[onclick*="toggleReviews"]');
+            const icon = button.querySelector('i');
+            
+            if (reviewsContainer.classList.contains('expanded')) {
+                reviewsContainer.classList.remove('expanded');
+                button.innerHTML = '<i class="fas fa-chevron-down mr-2"></i>⬆ Voir les avis';
+            } else {
+                reviewsContainer.classList.add('expanded');
+                button.innerHTML = '<i class="fas fa-chevron-up mr-2"></i>⬇ Masquer les avis';
+            }
+        }
+
+        // Smooth scrolling pour les ancres
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animation au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observer les cartes d'eBooks
+        document.querySelectorAll('.hover-lift').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
